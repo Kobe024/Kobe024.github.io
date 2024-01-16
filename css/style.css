@@ -1,0 +1,367 @@
+
+:root {
+--blue: #48c8ef;
+--black: #1c1b22;
+--white: #F5F6FB;
+}
+
+.parallax {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body, html {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color:#FEFCF2;
+font-size: 16px;
+}
+
+main {
+background: var(--black);
+padding: 0px;
+
+}
+
+
+/*
+********************************************************************
+### Header
+********************************************************************
+*/
+
+header {
+background: var(--black);
+text-align: center;
+margin-bottom: 0em;
+}
+
+.header-top {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.site-title {
+background: var(--black);
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+padding: 30px;
+}
+
+.title1, .title2 {
+font-family: 'Lato', sans-serif;
+font-size: 3em;
+line-height: 1.2 ;
+margin-bottom: 0px;
+padding: 30px 0px;
+text-transform: uppercase;
+}
+
+.title1 a, .title2 a {
+text-decoration: none;
+color: var(--blue);
+}
+
+.title1 {
+
+}
+
+.title2 {
+
+}
+
+.title1 a {
+letter-spacing: 5px;
+}
+
+.title2 a {
+font-weight: bold;
+letter-spacing: 15px;
+}
+
+.site-logo {
+padding: 0px 10px;
+}
+
+.site-logo img {
+max-width: 100%;
+width: 70px;
+min-width: 70px;
+height: auto;
+}
+
+.top-links {
+margin-left: auto;
+display: flex;
+font-family: Verdana, sans-serif;
+font-size: 1.2em;
+margin-right: 10px;
+}
+
+.top-links li {
+background: ;
+margin-right: 10px;
+}
+
+.top-links li a {
+background: ;
+padding: 10px;
+color: var(--white);
+}
+
+.top-links li a:hover {
+background: var(--blue);
+color: var(--black);
+}
+
+.site-nav {
+background: var(--white);
+font-family: Verdana, sans-serif;
+}
+
+.site-nav ul {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.site-nav li {
+background: ;
+padding: 0px;
+margin: 5px;
+}
+
+.site-nav li a {
+background: ;
+font-size: 1.1em;
+text-decoration: underline;
+color: var(--black);
+padding: 10px;
+display: block;
+}
+
+.site-nav li a:hover {
+background: var(--blue);
+color: var(--white);
+}
+
+
+
+/*
+********************************************************************
+### About
+********************************************************************
+*/
+
+.about {
+background: var(--black);
+width: 70%;
+margin: 0 auto;
+padding-bottom: 20px;
+}
+
+.about h2 {
+text-align: center;
+font-family: 'Lato', sans-serif;
+font-size: 2em;
+padding: 40px 0px 30px 0px;
+color: var(--blue);
+}
+
+.about p {
+font-family: Verdana, sans-serif;
+font-size: 1.2em;
+line-height: 1.3;
+background-color: ;
+color: var(--white);
+}
+
+.about-text1{
+text-align: center;
+}
+
+.about-text2{
+text-align: center;
+}
+
+.about-wrap {
+width: 90%;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.about-wrap img {
+max-width: 100%;
+width: 200px;
+margin: 30px;
+border: 5px solid white;
+}
+
+.about-spacer {
+display: block;
+margin-bottom: 30px;
+}
+
+/*
+********************************************************************
+### Symptoms
+********************************************************************
+*/
+
+.symptoms {
+background: ;
+}
+
+.symptoms-top {
+
+}
+
+.home-heading {
+background: var(--white);
+padding: 30px 0px;
+}
+
+.home-heading h2 {
+text-align: center;
+font-family: 'Lato', sans-serif;
+font-size: 2em;
+color: var(--blue);
+margin-bottom: 10px;
+}
+
+.home-heading p {
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 1.2em;
+}
+
+.symptoms-bottom {
+width: 70%;
+margin: 0 auto;
+background: ;
+display: flex;
+justify-content: space-evenly;
+padding: 50px 0;
+font-family: Verdana, sans-serif;
+}
+
+.symptoms-bottom ul {
+font-size: 1.3em;
+color: var(--white);
+text-align: center;
+}
+
+.symptoms-bottom li {
+background: ;
+margin-bottom: 15px;
+padding: 5px;
+}
+
+/*
+********************************************************************
+### Genetics
+********************************************************************
+*/
+
+.genetics {
+background: ;
+
+}
+
+.genetics-top {
+}
+
+.genetics-tables {
+background: ;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+align-items: center;
+padding: 50px 20px 20px 20px;
+width: 90%;
+margin: 0 auto;
+grid-gap: 20px;
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.genetics-tables div {
+background: ;
+}
+
+.genetics-tables img {
+max-width: 100%;
+height: auto;
+}
+
+.genetics-explanation {
+width: 90%;
+margin: 0 auto;
+padding: 20px;
+background: ;
+}
+
+.genetics-explanation p {
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 1.2em;
+line-height: 1.3;
+background-color: ;
+color: var(--white);
+}
+
+.genetics-wrap {
+background: ;
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 80%;
+margin: 0 auto;
+justify-items: center;
+align-items: center;
+gap: 20px;
+padding: 50px 0px;
+}
+
+.genetics-diagram-text {
+background: ;
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 1.2em;
+line-height: 1.5;
+background-color: ;
+color: var(--white);
+}
+
+.genetics-diagram-text p {
+margin-bottom: 50px;
+}
+
+.genetics-diagram {
+background: ;
+}
+
+.genetics-diagram img {
+background: whitesmoke ;
+max-width: 100%;
+height: auto;
+padding: 10px;
+}
+
+
+
+
+
+/*
+********************************************************************
+### Other
+********************************************************************
+*/
+
+main, header, .site-title, .site-nav, .site-nav li, .site-nav li a, .about, .about p{
+background: ;
+}
