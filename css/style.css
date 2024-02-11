@@ -1,21 +1,20 @@
 
 :root {
---blue: #48c8ef;
+/* --blue: #48c8ef;
 --black: #1c1b22;
---white: #F5F6FB;
-}
+--white: #F5F6FB; */
 
-.parallax {
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+--header-bg: #F0F0F0;
+--nav-bg: #00225A;
+--title-text: black;
+--nav-text: white;
 }
 
 html {
 margin: 0;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
 font-size: 62.5%; /* 10px */
 }
 
@@ -36,69 +35,96 @@ font-size: 1.6rem; /* 16px */
 */
 
 header {
-background: pink;
+background: var(--header-bg);
 }
 
 .header-top {
-background: var(--black);
-padding: 10px 5px;
-}
-
-.site-name {
-
-}
-
-.site-logo-mobile {
 background: ;
+padding: 16px 0px 10px 0px;
+
+}
+
+.site-logo {
+display: flex;
+justify-content: center;
+align-items:  center;
+}
+
+.logo-image {
+background: ;
+margin-right: ;
+}
+
+.logo-image img {
+width: 60px;
+}
+
+
+.logo-title {
 text-align: center;
-}
-
-.site-logo-mobile img {
-width: 80px;
-max-width: 100%;
-height: auto;
-}
-
-.site-logo-desktop {
-display: none;
-}
-
-.site-logo-desktop img {
-
-}
-
-.site-title {
-text-align: center;
-color: var(--blue);
+color: var(--title-text);
 font-family: 'Lato', san-serif;
 text-transform: uppercase;
-font-size: 2.9rem;
+font-size: clamp(2.4rem, 4vw + 1rem, 3.5rem);
 line-height: 1.2;
 padding: ;
 word-wrap: break-word;
+background: ;
 }
 
-.site-title h1:nth-child(1) {
-letter-spacing: 3px;
+.logo-title h1:nth-child(1) {
+letter-spacing: 4px;
 }
 
-.site-title h1:nth-child(3) {
-letter-spacing: 6px;
+.logo-title h1:nth-child(2) {
+letter-spacing: 4px;
 font-weight: bold;
 }
 
-.top-links {
+
+
+
+
+.main-navigation {
+background: var(--nav-bg);
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.menu-button {
 
 }
 
-.top-links li {
-
+.menu-button a {
+color: var(--nav-text);
 }
 
-.top-links li a {
-    
+.menu-button a span {
+background: ;
+font-size: 4.8rem;
 }
 
+.quick-links {
+display: flex;
+gap: 1.6rem;
+}
+
+.quick-links li {
+background: ;
+}
+
+.quick-links li a {
+background: ;
+display: block;
+padding: 10px 5px;
+color: var(--nav-text);
+}
+
+.quick-links li a:hover {
+background: white;
+color: black;
+}
 
 
 
