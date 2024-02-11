@@ -1,15 +1,13 @@
 
 :root {
-/* --blue: #48c8ef;
---black: #1c1b22;
---white: #F5F6FB; */
-
 --header-bg: #F0F0F0;
 --nav-bg: #00225A;
 --title-text: black;
 --nav-text: white;
 --site-blue: #00225A;
+--site-bg: #F0F0F0;
 --site-text: white;
+--awareness: #FCBF49;
 }
 
 html {
@@ -73,7 +71,7 @@ margin-right: ;
 }
 
 .logo-image img {
-width: 60px;
+width: 50px;
 }
 
 
@@ -94,7 +92,7 @@ letter-spacing: 4px;
 }
 
 .logo-title h1:nth-child(2) {
-letter-spacing: 4px;
+letter-spacing: 8px;
 font-weight: bold;
 }
 
@@ -105,8 +103,9 @@ font-weight: bold;
 .main-navigation {
 background: var(--nav-bg);
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
+padding: 0 1rem;
 }
 
 .menu-button {
@@ -152,8 +151,8 @@ color: black;
 .hero {
 display: grid;
 grid-template-columns: 1fr;
-padding: 1rem;
-background: ;
+padding: 1rem 1rem 3rem 1rem;
+background: var(--site-bg);
 text-align: center;
 }
 
@@ -174,13 +173,13 @@ align-items: center;
 }
 
 .hero-info h2 {
-font-family: 'Lato';
-font-size: 2.4rem;
+font-family: Lato;
+font-size: 2.8rem;
 padding: 2rem;
 }
 
 .hero-info p {
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-size: 1.8rem;
 line-height: 1.2;
 padding: 0 1rem;
@@ -196,7 +195,7 @@ display: block;
 background: var(--site-blue);
 color: var(--site-text);
 text-decoration: none;
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-size: 2.4rem;
 padding: 10px 20px;
 border-radius: 20px;
@@ -208,6 +207,110 @@ background: white;
 outline: 3px solid var(--site-blue);
 color: var(--site-blue);
 }
+
+/*
+********************************************************************
+### Awareness
+********************************************************************
+*/
+
+.section-title {
+background: #E93A50;
+color: var(--site-blue);
+font-family: 'Lato', sans-serif;
+font-weight: bold;
+font-size: 2.8rem;
+padding: 2rem 0;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.awareness {
+background: var(--site-bg) ;
+padding-bottom: 3rem;
+}
+
+.awareness h3 {
+background: var(--awareness);
+}
+
+.whatwedo,
+.howtohelp {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.whatwedo p,
+.howtohelp p {
+font-family: 'Roboto', sans-serif;
+font-size: 1.8rem;
+padding: 0 1.4rem;
+line-height: 1.2;
+}
+
+.whatwedo span,
+.howtohelp span {
+display: block;
+margin: 2rem;
+}
+
+.whatwedo span a,
+.howtohelp span a {
+background: var(--site-blue);
+color: var(--site-text);
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+font-size: 2.4rem;
+padding: 10px 20px;
+border-radius: 20px;
+display: block;
+}
+
+.whatwedo span a:hover,
+.howtohelp span a:hover {
+background: white;
+outline: 3px solid var(--site-blue);
+color: var(--site-blue);
+}
+
+.steps {
+background: ;
+display: grid;
+gap: 2rem;
+text-align: center;
+padding: 2rem 0;
+font-family: 'Roboto', sans-serif;
+font-size: 2rem;
+
+}
+
+.step {
+background: var(--awareness);
+width: 60%;
+margin: 0 auto;
+padding: 2rem 2rem;
+}
+
+.step-number {
+font-family: 'Lato', sans-serif;
+font-size: 5rem;
+}
+
+.step h4 {
+font-size: 3rem;
+}
+
+.step .step-icon {
+font-size: 7rem;
+margin: 1rem 0;
+}
+
+.step p {
+
+}
+
 
 
 /*
